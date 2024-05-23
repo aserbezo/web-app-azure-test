@@ -3,5 +3,6 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.get_last_location),
+    path('', views.index),
+    path('latest-coordinates/', views.latest_coordinates, name='latest_coordinates'),
 ]
